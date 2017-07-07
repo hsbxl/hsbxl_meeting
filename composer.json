@@ -1,5 +1,5 @@
 {
-  "name": "drupal/hsbxl_meeting",
+  "name": "hsbxl/hsbxl_meeting",
   "type": "drupal-custom-module",
   "description": "Awesome meeting module",
   "keywords": ["Drupal"],
