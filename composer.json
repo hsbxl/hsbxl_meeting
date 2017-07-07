@@ -1,0 +1,14 @@
+{
+  "name": "drupal/hsbxl_meeting",
+  "type": "drupal-custom-module",
+  "description": "Awesome meeting module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/hsbxl_meeting",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/hsbxl_meeting",
+    "source": "http://cgit.drupalcode.org/hsbxl_meeting"
+  },
+  "require": { }
+}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains hsbxl_meeting.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hsbxl_meeting_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hsbxl_meeting module.
+    case 'help.page.hsbxl_meeting':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Awesome meeting module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hsbxl_meeting_theme() {
+  return [
+    'hsbxl_meeting' => [
+      'render element' => 'children',
+    ],
+  ];
+}
