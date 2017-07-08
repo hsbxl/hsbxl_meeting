@@ -22,14 +22,3 @@ function hsbxl_meeting_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
-
-/**
- * Implements hook_theme().
- */
-function hsbxl_meeting_theme() {
-  return [
-    'hsbxl_meeting' => [
-      'render element' => 'children',
-    ],
-  ];
-}
