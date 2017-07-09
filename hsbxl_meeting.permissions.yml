@@ -1,0 +1,33 @@
+add meeting data entities:
+  title: 'Create new Meeting data entities'
+
+administer meeting data entities:
+  title: 'Administer Meeting data entities'
+  description: 'Allow to access the administration form to configure Meeting data entities.'
+  restrict access: true
+
+delete meeting data entities:
+  title: 'Delete Meeting data entities'
+
+edit meeting data entities:
+  title: 'Edit Meeting data entities'
+
+access meeting data overview:
+  title: 'Access the Meeting data overview page'
+
+view published meeting data entities:
+  title: 'View published Meeting data entities'
+
+view unpublished meeting data entities:
+  title: 'View unpublished Meeting data entities'
+
+view all meeting data revisions:
+  title: 'View all Meeting data revisions'
+
+revert all meeting data revisions:
+  title: 'Revert all Meeting data revisions'
+  description: 'Role requires permission <em>view Meeting data revisions</em> and <em>edit rights</em> for meeting data entities in question or <em>administer meeting data entities</em>.'
+
+delete all meeting data revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Meeting data revisions</em> and <em>delete rights</em> for meeting data entities in question or <em>administer meeting data entities</em>.'

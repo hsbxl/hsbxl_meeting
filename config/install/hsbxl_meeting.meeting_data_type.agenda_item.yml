@@ -1,0 +1,6 @@
+uuid: e7a98139-66db-4391-8adc-7b69ff7638a7
+langcode: en
+status: true
+dependencies: {  }
+id: agenda_item
+label: 'Agenda item'

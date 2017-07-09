@@ -1,0 +1,49 @@
+uuid: e5a8dbaf-3242-4e5c-a27a-d52e87e5062d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.meeting_data.agenda_item.field_agenda_item_agenda_topic
+    - field.field.meeting_data.agenda_item.field_agenda_item_meeting
+    - hsbxl_meeting.meeting_data_type.agenda_item
+id: meeting_data.agenda_item.default
+targetEntityType: meeting_data
+bundle: agenda_item
+mode: default
+content:
+  field_agenda_item_agenda_topic:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_agenda_item_meeting:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

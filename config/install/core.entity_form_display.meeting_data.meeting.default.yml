@@ -1,0 +1,29 @@
+uuid: e521c223-35d0-4d07-a9a2-0888a7b29e7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - hsbxl_meeting.meeting_data_type.meeting
+id: meeting_data.meeting.default
+targetEntityType: meeting_data
+bundle: meeting
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+{#
+/**
+ * @file meeting_data.html.twig
+ * Default theme implementation to present Meeting data data.
+ *
+ * This template is used when viewing Meeting data pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_meeting_data()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('meeting_data') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

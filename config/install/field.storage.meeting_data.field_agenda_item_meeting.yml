@@ -1,0 +1,19 @@
+uuid: 20419aa4-f1b6-4ab1-b7e4-0ff67ca8da0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - hsbxl_meeting
+id: meeting_data.field_agenda_item_meeting
+field_name: field_agenda_item_meeting
+entity_type: meeting_data
+type: entity_reference
+settings:
+  target_type: meeting_data
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

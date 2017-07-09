@@ -1,0 +1,11 @@
+entity.meeting_data.add_form:
+  route_name: entity.meeting_data.add_page
+  title: 'Add Meeting data'
+  appears_on:
+    - entity.meeting_data.collection
+entity.meeting_data_type.add_form:
+  route_name: entity.meeting_data_type.add_form
+  title: 'Add Meeting data type'
+  appears_on:
+    - entity.meeting_data_type.collection
+

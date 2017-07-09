@@ -1,0 +1,29 @@
+uuid: aa3dd783-68b1-4fa6-a910-58187265eb48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.meeting_data.field_agenda_topic_meeting
+    - hsbxl_meeting.meeting_data_type.agenda_topic
+    - hsbxl_meeting.meeting_data_type.meeting
+id: meeting_data.agenda_topic.field_agenda_topic_meeting
+field_name: field_agenda_topic_meeting
+entity_type: meeting_data
+bundle: agenda_topic
+label: Meeting
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:meeting_data'
+  handler_settings:
+    target_bundles:
+      meeting: meeting
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
