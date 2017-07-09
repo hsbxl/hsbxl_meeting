@@ -22,3 +22,37 @@ function hsbxl_meeting_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function hsbxl_meeting_theme() {
+  $theme = [];
+  $theme['meeting_data'] = [
+    'render element' => 'elements',
+    'file' => 'meeting_data.page.inc',
+    'template' => 'meeting_data',
+  ];
+  $theme['meeting_data_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'meeting_data.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function hsbxl_meeting_theme_suggestions_meeting_data(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#meeting_data'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'meeting_data__' . $sanitized_view_mode;
+  $suggestions[] = 'meeting_data__' . $entity->bundle();
+  $suggestions[] = 'meeting_data__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'meeting_data__' . $entity->id();
+  $suggestions[] = 'meeting_data__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
