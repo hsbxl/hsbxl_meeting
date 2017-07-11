@@ -6,6 +6,8 @@ dependencies:
     - field.storage.meeting_data.field_agenda_item_agenda_topic
     - hsbxl_meeting.meeting_data_type.agenda_item
     - hsbxl_meeting.meeting_data_type.agenda_topic
+_core:
+  default_config_hash: Dnoo-L9RLNW0pFYjTsyxVWd6JnHGqdOWEEBwkqzNtDM
 id: meeting_data.agenda_item.field_agenda_item_agenda_topic
 field_name: field_agenda_item_agenda_topic
 entity_type: meeting_data
@@ -24,6 +26,6 @@ settings:
     sort:
       field: created
       direction: DESC
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
