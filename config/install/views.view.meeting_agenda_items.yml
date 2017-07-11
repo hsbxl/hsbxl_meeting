@@ -7,8 +7,10 @@ dependencies:
     - hsbxl_meeting.meeting_data_type.agenda_item
   module:
     - hsbxl_meeting
+_core:
+  default_config_hash: PYOzwFDMqQifRgdfBBh1Tc_97m13dYFJm3eRRPJiJmM
 id: meeting_agenda_items
-label: 'Meeting agenda Items'
+label: 'Agenda Items'
 module: views
 description: ''
 tag: ''
@@ -134,7 +136,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: 'Meeting agenda Items'
+      title: 'Agenda Items'
       header: {  }
       footer: {  }
       empty: {  }
@@ -154,8 +156,10 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: node
-          default_argument_options: {  }
+          default_argument_type: raw
+          default_argument_options:
+            index: 1
+            use_alias: false
           default_argument_skip_url: false
           summary_options:
             base_path: ''

@@ -4,26 +4,20 @@ status: true
 dependencies:
   config:
     - hsbxl_meeting.meeting_data_type.meeting
-  module:
-    - user
+_core:
+  default_config_hash: CuHD388BIqBe_fBAj_2j5krFr2vF2JDfemyBaz0cgNQ
 id: meeting_data.meeting.default
 targetEntityType: meeting_data
 bundle: meeting
 mode: default
 content:
   name:
-    label: above
+    label: hidden
     type: string
-    weight: -4
+    weight: 0
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  user_id:
-    label: hidden
-    type: author
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  user_id: true

@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - bartik
+_core:
+  default_config_hash: m_ZzUGpdt5GBabrBKLw7iIW5GCmuBGZID3lTPBFzK_I
 id: views_block__meeting_agenda_items_block_1
 theme: bartik
 region: content
