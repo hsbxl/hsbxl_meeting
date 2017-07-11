@@ -1,0 +1,31 @@
+uuid: 5eb63d6c-dbb3-4e81-bbd4-26c5bf23ea1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.meeting_agenda_items
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__meeting_agenda_items_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:meeting_agenda_items-block_1'
+settings:
+  id: 'views_block:meeting_agenda_items-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/meeting_data/*'
+    negate: false
+    context_mapping: {  }
