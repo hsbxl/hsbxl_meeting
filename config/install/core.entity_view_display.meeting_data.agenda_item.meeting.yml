@@ -1,0 +1,28 @@
+uuid: 726fe2a1-673d-48ef-927a-1857d2a2650f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.meeting_data.meeting
+    - field.field.meeting_data.agenda_item.field_agenda_item_agenda_topic
+    - field.field.meeting_data.agenda_item.field_agenda_item_meeting
+    - hsbxl_meeting.meeting_data_type.agenda_item
+_core:
+  default_config_hash: 7mDKP8A-B02rKOMKqsBH9ui4EtQ8rX28r_MaE_yMF2I
+id: meeting_data.agenda_item.meeting
+targetEntityType: meeting_data
+bundle: agenda_item
+mode: meeting
+content:
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_agenda_item_agenda_topic: true
+  field_agenda_item_meeting: true
+  user_id: true

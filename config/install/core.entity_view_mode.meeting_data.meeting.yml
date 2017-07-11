@@ -1,0 +1,10 @@
+uuid: b70d2788-4b03-4421-9d50-5f5c1db4c3af
+langcode: en
+status: true
+dependencies:
+  module:
+    - hsbxl_meeting
+id: meeting_data.meeting
+label: Meeting
+targetEntityType: meeting_data
+cache: true
